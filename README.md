@@ -24,7 +24,7 @@ if you dont need all the slaves, you can bring up each piece individually:
   - `vagrant destroy -f` : destroy everything w/o confirmation
 
 
-when jenkins master comes up, it will use the `jenkins_home` directory in this repository where the swarm plugin is already installed. it had to be preconfigured with __username:admin, password: admin credentials__ to allow the [swarm plugin](https://wiki.jenkins.io/display/JENKINS/Swarm+Plugin) to work, since it needs to know the credentials of the master in order to self register. (`see scripts/provision/install_swarm.sh`)
+when jenkins master comes up, it will use the `jenkins_home` directory in this repository where the swarm plugin is already installed. it had to be preconfigured with __username:admin, password: admin__ credentials to allow the [swarm plugin](https://wiki.jenkins.io/display/JENKINS/Swarm+Plugin) to work, since it needs to know the credentials of the master in order to self register. (`see scripts/provision/install_swarm.sh`)
 
 to reiterate: if you want to change the jenkins master admin credentials (admin/admin), remember to also change it in `scripts/provision/install_swarm.sh` so that workers can successfully self register to the master
 
