@@ -13,7 +13,7 @@ quickstart:
 2. `cd ramen`
 3. `vagrant up`
 
-this brings up the jenkins master and all the slaves. it will take a while, especially if you are downloading the various bento boxes for the first time.
+this brings up the jenkins master and all the slaves. it will take a while, especially if you are downloading the various [bento boxes](https://app.vagrantup.com/bento/) for the first time.
 
 
 if you dont need all the slaves, you can bring up each piece individually:
